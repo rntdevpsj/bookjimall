@@ -1,0 +1,147 @@
+@charset "utf-8";
+
+* {margin:0; padding:0; border: 0; box-sizing: border-box;}
+body {background:var(--point-white); color:var(--black-color01); font-style:normal; font-size:max(13px, var(--title-15)); font-family:var(--font-type01); line-height: 1.4; letter-spacing:0; word-break: keep-all; text-wrap: pretty; overflow-wrap: anywhere;}
+::before, ::after{box-sizing: border-box;}
+div, ul, ol, li, dl, dt, dd, form, fieldset, input,textarea, button, p, h1, h2, h3, h4, h5, h6, blockquote, iframe, th, td {-webkit-text-size-adjust:none}
+img {vertical-align:middle; max-width:100%; max-height: 100%;}
+li {list-style:none;}
+button{background:transparent; cursor:pointer; vertical-align:middle; }
+button, input[type="submit"], input[type="button"] {background:transparent; cursor:pointer;font-family:inherit;}
+input, button {-webkit-appearance: none; -webkit-border-radius: 0; }
+h1, h2, h3, h4, h5, h6{font-size:inherit; letter-spacing: inherit; font-style:normal;}
+dl :is(dt, dd){font-weight: inherit;}
+
+
+/* table */
+table { border-collapse:unset; border-spacing:0; width:100%;table-layout:fixed;}
+th {vertical-align:middle;}
+th, td { border-collapse:collapse; }
+legend, hr { display:none; }
+caption{text-indent:-9999em;overflow:hidden;height:0;font-size:0;line-height:0; }
+
+/* form */
+form { display:inline; }
+select, input, textarea, button{color:inherit;font-family:inherit;font-size:inherit; vertical-align:middle;outline:none;}
+fieldset, blockquote, iframe, button { border:none; }
+:where(input, select, textarea):focus{outline: none;}
+
+/* font */
+i, em, u, cite {font-style:normal;}
+em{font-weight:bold;}
+
+/* link */
+a {color:inherit; text-decoration:none; cursor:pointer;}
+a:visited{text-decoration: none}
+a:focus{text-decoration: none}
+a:active{text-decoration: none}
+a:hover{text-decoration: none}
+
+/* custom */
+:root{
+    --trans-color:transparent;
+    --point-white:#fff;
+    --point-color01:#0D64FF;
+    --point-color02:#001A77;
+    --point-color03:#6284FD;
+    --point-color04:#96ADFF;
+    --point-color05:#1D93FF;
+    --point-color06:#465689;
+    --point-color07:#1EBA70;
+	--border-color01:#ddd;
+    --border-color02:#ccc;
+	--border-color03:#eee;
+	--border-color04:#D9D9D9;
+    --black-color00:#000;
+    --black-color01:#111;
+    --black-color02:#222;
+    --black-color03:#333;
+    --black-color04:#444;
+    --black-color05:#555;
+    --black-color06:#666;
+    --black-color07:#777;
+    --black-color08:#888;
+    --black-color09:#999;
+    --black-color10:#aaa;
+	--black-color11:#bbb;
+    --gray-bg01:#F5F5F5;
+    --gray-bg02:#F8F8F8;
+    --gray-bg03:#FAFAFA;
+    --gray-bg04:#F3F3F3;
+    --font-type01:'Paperlogy', 'Malgun Gothic', '맑은 고딕', dotum, sans-serif;
+    --filter-white:brightness(0) invert(1);
+    --filter-black:brightness(0);
+    --clip-poly01:polygon(100% 0, 0 100%, 100% 100%);
+    --radius-40:40px;
+    --radius-30:30px;
+    --radius-20:20px;
+    --radius-16:16px;
+    --radius-15:15px;
+    --radius-14:14px;
+    --radius-10:10px;
+    --radius-08:8px;
+    --title-20:20px;
+    --title-19:19px;
+    --title-18:18px;
+    --title-17:17px;
+    --title-16:16px;
+    --title-15:15px;
+    --title-14:14px;
+}
+
+@media (max-width:1023px){
+    :root{
+        --title-20:19px;
+        --title-19:18px;
+        --title-18:17px;
+        --title-17:16px;
+        --title-16:15px;
+        --title-15:14px;
+        --title-14:13px;
+    }
+}
+@media (max-width:860px){
+    :root{
+        --radius-40:30px;
+        --radius-30:20px;
+        --radius-20:15px;
+        --radius-16:12px;
+        --radius-15:11px;
+        --radius-14:10px;
+        --radius-10:7px;
+        --radius-08:6px;
+        --title-20:18px;
+        --title-19:17px;
+        --title-18:16px;
+        --title-17:15px;
+        --title-16:14px;
+        --title-15:13px;
+        --title-14:12px;
+    }
+}
+@media (max-width:640px){
+    :root{
+        --radius-40:20px;
+        --radius-30:15px;
+        --radius-20:10px;
+        --radius-16:8px;
+        --radius-15:7.5px;
+        --radius-14:7px;
+        --radius-10:5px;
+        --radius-08:4px;
+        --title-20:17px;
+        --title-19:16px;
+        --title-18:15px;
+        --title-17:14px;
+        --title-16:13px;
+        --title-15:12px;
+    }
+}
+@media (max-width:479px){
+    :root{
+        --title-20:16px;
+        --title-19:15px;
+        --title-18:14px;
+        --title-17:13px;
+    }
+}

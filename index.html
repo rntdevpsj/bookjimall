@@ -3,19 +3,275 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>사이트 준비중</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="세무법인 리치앤택스 - 축적된 노하우로 최고의 세무 서비스를 제공합니다.">
+    <meta name="keywords" content="세무법인, 리치앤택스, 세무상담, 환급액조회, 절세">
+    <meta property="og:title" content="세무법인 리치앤택스">
+    <meta property="og:description" content="축적된 노하우로 최고의 서비스를 제공합니다.">
+    <title>세무법인 리치앤택스</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/subsets/Paperlogy-dynamic-subset.css" type="text/css"/>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/custom.css">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
 </head>
 <body>
+    <!-- 최상단 파란색 바 영역 -->
+    <div class="top-accent-bar"></div>
+
     <div class="container">
-        <img src="images/logo.jpg" alt="회사 로고" class="logo">
-        <h1>복지몰 작업중...</h1>
-        <p>더 나은 서비스로 찾아뵙겠습니다.</p>
-        <div class="loader">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+        <header>
+            <div class="logo-wrapper">
+                <div class="logo-placeholder" role="img" aria-label="세무법인 리치앤택스 로고">
+                    <img src="./image/logo.png" alt="로고">
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!-- 메인 히어로 및 슬라이딩 비주얼 섹션 -->
+            <section class="hero-section">
+                <h1 class="hero-title">
+                    축적된 노하우로<br>
+                    최고의 서비스를 제공합니다.
+                </h1>
+
+                <article class="main-visual">
+                    <div class="stage">
+                        <div class="card c1" id="card1">
+                            <div class="txt-wrap">
+                                <h2>고객별 전담팀</h2>
+                                <p>담당 세무사 1명</p>
+                                <p>담당 사무원 1명</p>
+                                <p>고객 1:1 밀착케어</p>
+                            </div>
+                            <div class="img-box"><img src="./image/main-visual01.png" alt="전담팀"></div>
+                        </div>
+
+                        <div class="card c2" id="card2">
+                            <div class="txt-wrap">
+                                <h2>최적의 절세안</h2>
+                                <p>소상공인부터 상장사까지</p>
+                                <p>31,000개 회사의 <br>세무진단 노하우 보유</p>
+                            </div>
+                            <div class="img-box"><img src="./image/main-visual02.png" alt="절세안"></div>
+                        </div>
+
+                        <div class="card c3" id="card3">
+                            <div class="txt-wrap">
+                                <h2>숙련된 노하우</h2>
+                                <p>메O린 공식제휴 세무대리</p>
+                                <p>평균 11년 경력의 세무사무원 담당</p>
+                            </div>
+                            <div class="img-box"><img src="./image/main-visual03.png" alt="노하우"></div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <!-- MP몰 프로모션 섹션 -->
+            <section class="promotion-section">
+                <h2 class="promo-title-1">오직!</h2>
+                <h3 class="promo-title-2">MP몰 회원님들에게만 제공해 드려요!</h3>
+
+                <div class="promo-image-wrapper">
+                    <div class="promo-img-container-1">
+                        <img src="./image/taxtable01.png" alt="수수료" onerror="this.src='https://via.placeholder.com/1462x400/f8f9fa/000000?text=Tax+Table+01'">
+                    </div>
+                    <div class="promo-img-container-2">
+                        <img src="./image/taxtable02.png" alt="보수조견표" onerror="this.src='https://via.placeholder.com/1284x600/f8f9fa/000000?text=Tax+Table+02'">
+                    </div>
+                </div>
+            </section>
+        </main>
     </div>
+
+    <!-- WHY 리치앤택스 섹션 -->
+    <section class="why-section">
+        <div class="container">
+            <div class="why-inner">
+                <p class="why-header-eng">WHY?</p>
+                <h2 class="why-header-kor">리치앤택스</h2>
+                <div class="why-line"></div>
+                <h3 class="why-main-headline">내 돈 찾는 데 걸리는 시간, 1분</h3>
+                <p class="why-sub-description">
+                    복잡한 서류도 필요 없어요.<br>
+                    환급액 조회까지 1분이면 충분합니다.<br>
+                    <strong>오직 MP몰 회원에게만 수수료 20%(VAT별도)를 제안</strong>
+                </p>
+            </div>
+            <div class="why-cards-wrap">
+                <div class="why-cards-container">
+                    <div class="why-side-text">이미 31,000명의<br>대표님이 리치앤택스를<br>선택하셨습니다.</div>
+                    <div class="cont">
+                        <div class="why-card">
+                            <div class="icon-box">
+                                <img src="./image/icon_simplestep.png" alt="간편이용절차 아이콘" class="icon">
+                            </div>
+                            <h4>간편 이용 절차</h4>
+                            <p>복잡한 서류 준비 대신, <br class="for_pc">카카오톡이나 PASS 인증 <br class="for_pc">한 번으로 빠르고 안전하게!</p>
+                            <a href="https://solution.richntax.com/" target="_blank" class="more-link">자세히보기</a>
+                        </div>
+                        <div class="why-card">
+                            <div class="icon-box">
+                                <img src="./image/icon_checkestimatedrefund.png" alt="예상환급액확인 아이콘" class="icon">
+                            </div>
+                            <h4>예상 환급액 확인</h4>
+                            <p>분석된 환급 금액 확인 후, <br class="for_pc">전문 상담을 통해 실제 환급 신청 <br class="for_pc">여부를 자유롭게 결정하세요.</p>
+                            <a href="https://solution.richntax.com/" target="_blank" class="more-link">자세히보기</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="consult-btn-wrap">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSd5K0YxxnyGfx0HsaocYtJn_p0sNoO3v-nD-YnZuJyaHlaPrg/viewform" target="_blank" class="consult-btn">
+                        상담신청하기
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 월별보고 섹션 -->
+    <section class="report-section">
+        <div class="container">
+            <div class="report-badge">월별보고</div>
+            <h2 class="report-main-title">예상 세액을 매월 미리 알려드려요!</h2>
+            <p class="report-sub-title">
+                매월 예상 부가가치세와 소득세를 미리 안내하여 <br class="for_pc">대표님이 오직 사업에만 집중할 수 있는 환경을 만듭니다.
+            </p>
+
+            <div class="report-content-grid">
+                <div class="report-mockup-area">
+                    <img src="./image/mobileimg.png" alt="휴대폰이미지" >
+                </div>
+                <div class="report-cards-area">
+                    <div class="r-card">
+                        <div class="r-icon">
+                            <img src="./image/icon_monthmanage.png" alt="투명한경영 아이콘" class="icon">
+                        </div>
+                        <h4>투명한 경영</h4>
+                        <p>매월 예상되는 부가가치세와 <br class="for_pc">소득세를 정밀하게 분석하여 <br class="for_pc">미리 안내합니다.</p>
+                    </div>
+                    <div class="r-card">
+                        <div class="r-icon">
+                            <img src="./image/icon_monthgraph.png" alt="최적의 사업환경 아이콘" class="icon">
+                        </div>
+                        <h4>최적의 사업 환경</h4>
+                        <p>분석 결과만 가볍게 확인하시고 <br class="for_pc">비지니스에만 몰입하실 수 있는 <br class="for_pc">최적의 환경을 만들어 드립니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- [신규] 환불제도 섹션 -->
+    <section class="refund-section">
+        <div class="container">
+            <div class="refund-badge">환불제도</div>
+            <h2 class="refund-main-title">서비스 불만족 시, 100% 환불 보장</h2>
+            <p class="refund-sub-text">
+                리치앤택스는 기장 서비스에 관하여 <br class="for_pc">고객만족 100%를 추구합니다.
+            </p>
+
+            <div class="refund-grid">
+                <div class="thumb"><img src="./image/refund-section01.png" alt="환불제도"></div>
+                <div class="refund-col">
+                    <div class="refund-card">
+                        <div class="card-emoji">
+                            <img src="./image/icon_refund.png" alt="압도적자신감 아이콘">
+                        </div>
+                        <h4>압도적 자신감</h4>
+                        <p>기장 서비스 계약 후 4개월 이내 불만족 시 100% 환불을 약속드립니다.</p>
+                    </div>
+                    <div class="refund-card">
+                        <div class="card-emoji">
+                            <img src="./image/icon_center.png" alt="고객중심정책 아이콘">
+                        </div>
+                        <h4>고객 중심 정책</h4>
+                        <p>리치앤택스만의 차별화된 실력을 리스크 없이 직접 경험해 보시고 결정하십시오.</p>
+                    </div>
+                    <div class="refund-card">
+                        <div class="card-emoji">
+                            <img src="./image/icon_Security.png" alt="안심보장 아이콘">
+                        </div>
+                        <h4>안심 보장 시스템</h4>
+                        <p>소중한 비용을 온전히 돌려드려, 파트너 선택에 따른 그 어떤 리스크도 남기지 않겠습니다.</p>
+                    </div>
+                </div>
+            </div>
+
+            <p class="refund-disclaimer">
+                ※ 기장대리 서비스에 한하며, 종합소득세 신고 수수료 및 기타 용역은 제외됩니다.
+            </p>
+
+            <div class="consult-btn-wrap">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSd5K0YxxnyGfx0HsaocYtJn_p0sNoO3v-nD-YnZuJyaHlaPrg/viewform" target="_blank" class="consult-btn">
+                    상담신청하기
+                </a>
+            </div>
+        </div>
+    </section>
+    <footer class="l-footer" role="contentinfo">
+        <div class="container">
+            <div class="l-footer__container">
+                
+                <section class="c-brand">
+                    <h2 class="c-brand__title">세무법인 리치앤택스</h2>
+                </section>
+
+                <address class="c-info">
+                    <div class="c-info__row">
+                        <dl class="c-info__item">
+                            <dt class="c-info__label">대표세무사.</dt>
+                            <dd class="c-info__value">이성현 세무사</dd>
+                        </dl>
+                        <dl class="c-info__item">
+                            <dt class="c-info__label">주소.</dt>
+                            <dd class="c-info__value">서울시 영등포구 양평로 116-1 , 7층 (더레드빌딩)</dd>
+                        </dl>
+                    </div>
+                    
+                    <div class="c-info__row">
+                        <dl class="c-info__item">
+                            <dt class="c-info__label">홈페이지.</dt>
+                            <dd class="c-info__value"><a href="https://www.richntax.com/" target="_blank" title="리치앤택스 홈페이지 새창열림">https://www.richntax.com/</a></dd>
+                        </dl>
+                        <dl class="c-info__item">
+                            <dt class="c-info__label">E-mail.</dt>
+                            <dd class="c-info__value"><a href="mailto:help@lsware.co.kr" title="이메일 보내기">help@lsware.co.kr</a></dd>
+                        </dl>
+                        <dl class="c-info__item">
+                            <dt class="c-info__label">광고책임세무사.</dt>
+                            <dd class="c-info__value">김철회</dd>
+                        </dl>
+                    </div>
+                </address>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- 퀵메뉴 -->
+<aside class="quick-menu">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSd5K0YxxnyGfx0HsaocYtJn_p0sNoO3v-nD-YnZuJyaHlaPrg/viewform" target="_blank" class="quick-btn btn-submit">
+        <img src="./image/iconr_submit.png" alt="신청하기 아이콘" class="icon">
+        <span>신청하기</span>
+    </a>
+    <a href="https://solution.richntax.com/" target="_blank" class="quick-btn btn-refund">
+        <img src="./image/iconr_receipt.png" alt="환급액조회 아이콘" class="icon">
+        <span>환급액조회</span>
+    </a>
+    <a href="https://blog.naver.com/richntaxfirm" target="_blank" class="quick-btn btn-blog">
+        <img src="./image/iconr_blog.png" alt="Blog 아이콘" class="icon">
+        <span>Blog</span>
+    </a>
+    <a href="https://www.youtube.com/channel/UC6lH6t7kc54hAvl-5n9rbzg" target="_blank" class="quick-btn btn-youtube">
+        <img src="./image/iconr_youtube.png" alt="YouTube 아이콘" class="icon">
+        <span>YouTube</span>
+    </a>
+    <button class="quick-btn btn-top" id="scrollTopBtn" onclick="$('html, body').stop().animate( { scrollTop : '0' }, 700 );">
+        <img src="./image/iconr_toparrow.png" alt="TOP 아이콘" class="icon">
+        <span>TOP</span> 
+    </button>
+</aside>
+
 </body>
 </html>
